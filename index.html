@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>PPM Viewer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <div>
+        <h2>
+            PPM Viewer
+        </h2>
+    </div>
+    <div>
+        <div>
+            Content:
+        </div>
+        <textarea id="txtInput" cols="50" rows="10">
+P1
+# This is an example bitmap of the letter "J"
+6 10
+0 0 0 0 1 0
+0 0 0 0 1 0
+0 0 0 0 1 0
+0 0 0 0 1 0
+0 0 0 0 1 0
+0 0 0 0 1 0
+1 0 0 0 1 0
+0 1 1 1 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+        </textarea>
+    </div>
+    <div>
+        <div id="message"></div>
+        <canvas id="output"></canvas>
+    </div>
+</body>
+</html>
