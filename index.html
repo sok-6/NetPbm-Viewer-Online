@@ -16,9 +16,10 @@
     </div>
     <div>
         <div>
-            Content:
-        </div>
-        <textarea id="txtInput" cols="50" rows="10">
+            <div>
+                Content:
+            </div>
+            <textarea id="txtInput" cols="60" rows="15" oninput="updateImage();">
 P1
 # This is an example bitmap of the letter "J"
 6 10
@@ -32,7 +33,14 @@ P1
 0 1 1 1 0 0
 0 0 0 0 0 0
 0 0 0 0 0 0
-        </textarea>
+            </textarea>
+        </div>
+        <div>
+            <div>
+                Pixel size:
+            </div>
+            <input id="pixelSize" type="number" min="1" max="10" value="1" oninput="updateImage();" />
+        </div>
     </div>
     <div>
         <div id="message"></div>
